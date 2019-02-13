@@ -1,7 +1,7 @@
 $.getJSON('data.json', function(data) { // getJSON() loads data in json format
 // data is js array
 	var output = '<ul>';
-	$.each(data, function(key, val) { // alt1
+	$.each(data, function(key, val) { // alt1; val is obj
 		output += '<li>' + val.name + '</li>'; 
 		// alt1: data[key].name // alt2: this.name
 	});
